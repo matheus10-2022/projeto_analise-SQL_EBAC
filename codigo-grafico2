@@ -1,0 +1,7 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+
+grafico = sns.barplot(data=media_limite_df, x="tipo_cartao", y="media_limite", ci=None, palette="dark")
+grafico.set(title='Média de limite do cartão por tipo:', xlabel='', ylabel='Valor (em $)', yticks=np.arange(0, 35000, 8000));
